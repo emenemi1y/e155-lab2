@@ -1,8 +1,38 @@
 m255
 K4
 z2
-!s12c _opt
-Z0 !s99 nomlopt
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt2
+R1
+R2
+R1
+Z3 !s12c _opt1
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
 !s11f vlog 2024.2 2024.05, May 20 2024
 13
 !s112 1.1
@@ -10,68 +40,248 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 dC:/Users/ekendrick/my_designs/e155_lab2
+Z4 dC:/Users/ekendrick/my_designs/e155_lab2
 T_opt
-!s110 1757200250
-VGz=[MY2JTOjj5hJ]bBhh=2
-04 16 4 work testbench_sevseg fast 0
-=1-00be43e5702e-68bcbf79-3d6-2da0
-R0
-!s12f OEM25U2 
-!s12b OEM100
-!s124 OEM100
-!s135 nogc
-o-quiet -auto_acc_if_foreign -work work +acc
-Z2 tCvgOpt 0
+!s110 1757213148
+VC3fJKEBS;VSLe1fXe_cKN2
+04 13 4 work testbench_top fast 0
+=1-00be43e5702e-68bcf1dc-25c-3c44
+R1
+!s12f OEM25U5 
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L iCE40UP -Lf iCE40UP +acc
+Z8 tCvgOpt 0
 n@_opt
-OL;O;2024.2;79
+Z9 OL;O;2024.2;79
+T_opt1
+!s110 1757209807
+VzQGBz_P>;0L:lF>=]D;YP2
+04 17 4 work testbench_counter fast 0
+=1-00be43e5702e-68bce4cf-227-2970
+R1
+Z10 !s12f OEM25U2 
+R5
+R6
+R7
+Z11 o-quiet -auto_acc_if_foreign -work work +acc
+R8
+n@_opt1
+R9
+R4
+T_opt2
+!s110 1757210545
+VbanCFMnSoSZ7fb>U??jOQ0
+04 13 4 work testbench_mux fast 0
+=1-00be43e5702e-68bce7b1-1de-3a4c
+R1
+R10
+R5
+R6
+R7
+R11
+R8
+n@_opt2
+R9
+R4
+vcounter
+2C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv
+Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z13 !s110 1757213132
+!i10b 1
+!s100 kScFiAWEzn<DKC15IVhT91
+IXCgH1@0eBYYkR?fnJaki]0
+S1
+Z14 dC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project
+w1757212249
+8C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv
+!i122 127
+L0 1 34
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z16 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z17 !s108 1757213132.000000
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv|
+!i113 0
+Z18 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vmux
+2C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv
+R12
+R13
+!i10b 1
+!s100 5`AZ]Nfc<dai`f;]D@z242
+IF6JKPOMMoTJGDY2=m>SMd0
+S1
+R14
+w1757210100
+8C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv
+!i122 129
+L0 1 15
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv|
+!i113 0
+R18
+R8
 vsevseg
 2C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv
-Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z4 !s110 1757200239
+R12
+R13
 !i10b 1
 !s100 HOLJNJ0lnPm:_aml<eQJl2
 IFmCHHcDUS?hL8R9@IMono0
 S1
-R1
+R14
 w1757196997
 8C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv
 FC:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv
-!i122 3
-L0 1 35
-Z5 VDg1SIo80bB@j0V0VzS_@n1
-Z6 OL;L;2024.2;79
+!i122 125
+Z19 L0 1 35
+R15
+R16
 r1
 !s85 0
 31
-Z7 !s108 1757200239.000000
+R17
 !s107 C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv|
 !i113 0
-Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+R18
+R8
+vtestbench_counter
+2C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv
+R12
+R13
+!i10b 1
+!s100 MDVf;jc<:M>n]M5h]3jW`1
+Iz<MACD>>5OS4mKcmf`MCW2
+S1
+R14
+w1757209249
+8C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv
+!i122 128
+L0 1 29
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv|
+!i113 0
+R18
+R8
+vtestbench_mux
+2C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv
+R12
+R13
+!i10b 1
+!s100 0S_g;zg8WIU4RP_LiA5Ec1
+I1TJaA1;cO]<7Fk;ZO`<HU1
+S1
+R14
+w1757210372
+8C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv
+!i122 130
+R19
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv|
+!i113 0
+R18
+R8
 vtestbench_sevseg
 2C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/testbench_sevseg.sv
-R3
-R4
+R12
+R13
 !i10b 1
 !s100 G4D]m[:H0IIm39`mG34_C1
 I3f48I^J[6C>nRN7;46A4L3
 S1
-R1
+R14
 w1757200237
 8C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/testbench_sevseg.sv
 FC:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/testbench_sevseg.sv
-!i122 4
+!i122 126
 L0 1 43
-R5
-R6
+R15
+R16
 r1
 !s85 0
 31
-R7
+R17
 !s107 C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/testbench_sevseg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/testbench_sevseg.sv|
 !i113 0
+R18
 R8
-R2
+vtestbench_top
+2C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv
+R12
+R13
+!i10b 1
+!s100 ^fSG5F__NL7La@:Y`ZUe60
+ILA?bWV]TdNAiZghdzJ_Oz1
+S1
+R14
+w1757213120
+8C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv
+!i122 132
+L0 3 36
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv|
+!i113 0
+R18
+R8
+vtop
+2C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv
+R12
+R13
+!i10b 1
+!s100 WYL3zoE7:D2`hWXDzllO61
+IWY^5Of3KbcNmB^nQILe6c3
+S1
+R14
+w1757211884
+8C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv
+FC:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv
+!i122 131
+L0 1 38
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv|
+!i113 0
+R18
+R8

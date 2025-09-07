@@ -4,13 +4,13 @@
 set ret 0
 if {[catch {
 
-if {![file exists {C:/Users/ekendrick/my_designs/e155_lab2/impl_1}]} {
-  file mkdir {C:/Users/ekendrick/my_designs/e155_lab2/impl_1}
+if {![file exists {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1}]} {
+  file mkdir {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1}
 }
-cd {C:/Users/ekendrick/my_designs/e155_lab2/impl_1}
+cd {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1}
 
-sys_set_attribute -gui on -msg {C:/Users/ekendrick/my_designs/e155_lab2/promote.xml}
-msg_load {C:/Users/ekendrick/my_designs/e155_lab2/promote.xml}
+sys_set_attribute -gui on -msg {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml}
+msg_load {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml}
 des_set_project_udb -in {e155_lab2_impl_1_syn.udb} -out {e155_lab2_impl_1_map.udb} -milestone map -pm ice40tp
 des_set_reference_udb -clean
 # map option

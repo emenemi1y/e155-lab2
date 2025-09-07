@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35935050</ID>
@@ -339,14 +332,14 @@
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>C:/Users/ekendrick/my_designs/e155_lab2/impl_1</Dynamic>
+            <Dynamic>C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1</Dynamic>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/lab2_ek.sv(1): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(1): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/lab2_ek.sv</Navigation>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv</Navigation>
             <Navigation>1</Navigation>
         </Message>
         <Message>
@@ -358,48 +351,37 @@
             <Navigation>756</Navigation>
         </Message>
         <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/mux.sv(1): </Dynamic>
+            <Dynamic>mux</Dynamic>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/mux.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/sevseg.sv(1): </Dynamic>
+            <Dynamic>sevseg</Dynamic>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/sevseg.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(1): </Dynamic>
+            <Dynamic>counter</Dynamic>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/lab2_ek.sv(36): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(29): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>25</Dynamic>
-            <Navigation>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/lab2_ek.sv</Navigation>
-            <Navigation>36</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/mux.sv(1): </Dynamic>
-            <Dynamic>mux</Dynamic>
-            <Navigation>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/mux.sv</Navigation>
-            <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/mux.sv(13): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/mux.sv</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv(1): </Dynamic>
-            <Dynamic>sevseg</Dynamic>
-            <Navigation>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv</Navigation>
-            <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35901330</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/lab2_ek.sv(41): </Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>s</Dynamic>
-            <Navigation>c:/users/ekendrick/my_designs/e155_lab2/source/impl_1/lab2_ek.sv</Navigation>
-            <Navigation>41</Navigation>
+            <Navigation>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv</Navigation>
+            <Navigation>29</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

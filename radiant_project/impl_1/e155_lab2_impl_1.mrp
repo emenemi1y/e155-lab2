@@ -8,32 +8,32 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Sat Sep  6 15:38:08 2025
+Mapped on: Sat Sep  6 19:50:14 2025
 
 Design Information
 ------------------
 
 Command line:   map -i e155_lab2_impl_1_syn.udb -o e155_lab2_impl_1_map.udb -mp
      e155_lab2_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/ekendrick/my_designs/e155_lab2/promote.xml
+     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml
 
 Design Summary
 --------------
 
    Number of slice registers:  26 out of  5280 (<1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            46 out of  5280 (1%)
-      Number of logic LUT4s:              20
+   Number of LUT4s:            57 out of  5280 (1%)
+      Number of logic LUT4s:              31
       Number of ripple logic:             13 (26 LUT4s)
-   Number of IO sites used:   22 out of 39 (56%)
-      Number of IO sites used for general PIO: 22
+   Number of IO sites used:   23 out of 39 (59%)
+      Number of IO sites used for general PIO: 23
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 22 out of 36 (61%)
+      Number of IO sites used for PIO+I3C: 23 out of 36 (64%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 22 out of 39 (56%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 23 out of 39 (59%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -47,19 +47,19 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk: 14 loads, 14 rising, 0 falling (Driver: Pin
-     hf_osc.osc_inst/CLKHF)
+      Net reset_c: 14 loads, 14 rising, 0 falling (Driver: Port reset)
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
-   Number of LSRs:  1
-      Net n289: 13 loads, 13 SLICEs
+   Number of LSRs:  2
+      Net counter1.n32: 13 loads, 13 SLICEs
+      Net clk: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net n289: 14 loads
-      Net s: 4 loads
-      Net s1_c_0: 4 loads
-      Net s2_c_0: 4 loads
-      Net seg_power_c: 4 loads
-      Net VCC_net: 4 loads
+      Net counter1.n32: 13 loads
+      Net seg_power_c: 7 loads
+      Net s[0]: 7 loads
+      Net s[1]: 7 loads
+      Net s[2]: 7 loads
+      Net s[3]: 7 loads
 
                                     Page 1
 
@@ -69,10 +69,10 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net counter[24]: 2 loads
-      Net led_c_2_N_33: 2 loads
-      Net led_c_3_N_31: 2 loads
-      Net s1_c_2: 2 loads
+      Net s1_c_0: 4 loads
+      Net s2_c_0: 4 loads
+      Net s1_c_2: 3 loads
+      Net s1_c_3: 3 loads
 
 
 
@@ -110,6 +110,8 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s1[3]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| reset               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | led[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | led[1]              | OUTPUT    |           |       |       |           |
@@ -125,8 +127,6 @@ IO (PIO) Attributes
 | seg_power[1]        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[0]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| seg[1]              | OUTPUT    |           |       |       |           |
 
                                     Page 2
 
@@ -136,6 +136,8 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -147,6 +149,11 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[6]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block hf_osc.vlo_inst was optimized away.
 
 OSC Summary
 -----------
@@ -175,15 +182,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 65 MB
-Checksum -- map: 65aa4c67bb3bb55a842761ba74b25672f7b7d713
-
-
-
-
-
-
-
+   Peak Memory Usage: 66 MB
+Checksum -- map: 874f5851ca4925f97017001858d229de4f7fbe77
 
 
 

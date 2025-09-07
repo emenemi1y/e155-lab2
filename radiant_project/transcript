@@ -15,39 +15,563 @@
 # //
 # Loading project e155_lab2_test
 # Compile of sevseg.sv was successful.
-# Compile of testbench_sevseg.sv failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
 # Compile of sevseg.sv was successful.
 # Compile of testbench_sevseg.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.testbench_sevseg -voptargs=+acc
-# vsim -gui work.testbench_sevseg -voptargs="+acc" 
-# Start time: 16:10:16 on Sep 06,2025
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.testbench_counter -voptargs=+acc
+# vsim -gui work.testbench_counter -voptargs="+acc" 
+# Start time: 18:23:38 on Sep 06,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Error: C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/testbench_sevseg.sv(14): Module 'top' is not defined.
-#  For instance 'sevseg' at path 'testbench_sevseg'
+# ** Error: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv(13): Module 'counter' is not defined.
+#  For instance 'dut' at path 'testbench_counter'
 # Optimization failed
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
 # Error loading design
-# End time: 16:10:17 on Sep 06,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 7
+# End time: 18:23:38 on Sep 06,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
 # Compile of sevseg.sv was successful.
 # Compile of testbench_sevseg.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui -voptargs=+acc work.testbench_sevseg
-# vsim -gui -voptargs="+acc" work.testbench_sevseg 
-# Start time: 16:10:49 on Sep 06,2025
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:24:45 on Sep 06,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.testbench_sevseg(fast)
-# Loading work.sevseg(fast)
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
 add wave -position insertpoint  \
-sim:/testbench_sevseg/clk \
-sim:/testbench_sevseg/s \
-sim:/testbench_sevseg/seg
+sim:/testbench_counter/clk \
+sim:/testbench_counter/sel
 run 1000
-# End time: 16:11:38 on Sep 06,2025, Elapsed time: 0:00:49
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# End time: 18:32:03 on Sep 06,2025, Elapsed time: 0:07:18
+# Errors: 0, Warnings: 7
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:32:03 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_counter/sel', driven via a port connection, is multiply driven. See C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv(13).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_counter File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv Line: 24
+# Error loading design
+# End time: 18:32:16 on Sep 06,2025, Elapsed time: 0:00:13
+# Errors: 1, Warnings: 2
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:33:40 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv(26): (vopt-7061) Variable 'sel' driven in an always_ff block, may not be driven by any other process. See C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv(19).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/work/@_opt1/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/work/@_opt1".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=4.
+# Error loading design
+# End time: 18:33:40 on Sep 06,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 6
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv failed with 1 errors.
+# Compile of testbench_counter.sv failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:41:13 on Sep 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv(26): (vopt-7061) Variable 'sel' driven in an always_ff block, may not be driven by any other process. See C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv(19).
+# ** Error (suppressible): C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv(30): (vopt-7061) Variable 'sel' driven in an always_ff block, may not be driven by any other process. See C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv(19).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=1.
+# Error loading design
+# End time: 18:41:13 on Sep 06,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 5
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:41:51 on Sep 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_counter/clk
+add wave -position insertpoint  \
+sim:/testbench_counter/reset
+add wave -position insertpoint  \
+sim:/testbench_counter/sel
+run 1000
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# End time: 18:44:53 on Sep 06,2025, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 4
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:44:54 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_counter/clk
+add wave -position insertpoint  \
+sim:/testbench_counter/reset
+add wave -position insertpoint  \
+sim:/testbench_counter/sel
+run 1000
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# End time: 18:50:07 on Sep 06,2025, Elapsed time: 0:05:13
 # Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 18:50:07 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_counter/clk \
+sim:/testbench_counter/reset \
+sim:/testbench_counter/sel
+run 1000
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_mux
+# End time: 18:58:05 on Sep 06,2025, Elapsed time: 0:07:58
+# Errors: 0, Warnings: 4
+# vsim -gui -voptargs="+acc" work.testbench_mux 
+# Start time: 18:58:05 on Sep 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_mux/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's1'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_mux/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_mux/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 15
+# ** Warning: (vsim-3722) C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv(15): [TFMPC] - Missing connection for port 's'.
+add wave -position insertpoint  \
+sim:/testbench_mux/clk \
+sim:/testbench_mux/reset \
+sim:/testbench_mux/s \
+sim:/testbench_mux/s1 \
+sim:/testbench_mux/s2 \
+sim:/testbench_mux/sel
+run 1000
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_mux
+# End time: 19:02:25 on Sep 06,2025, Elapsed time: 0:04:20
+# Errors: 0, Warnings: 7
+# vsim -gui -voptargs="+acc" work.testbench_mux 
+# Start time: 19:02:25 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+add wave -position insertpoint  \
+sim:/testbench_mux/clk \
+sim:/testbench_mux/s \
+sim:/testbench_mux/s1 \
+sim:/testbench_mux/s2 \
+sim:/testbench_mux/sel
+run 1000
+# Load canceled
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv failed with 1 errors.
+# Compile of testbench_top.sv failed with 1 errors.
+# 8 compiles, 2 failed with 2 errors.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv failed with 1 errors.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_top
+# End time: 19:19:20 on Sep 06,2025, Elapsed time: 0:16:55
+# Errors: 0, Warnings: 7
+# vsim -gui -voptargs="+acc" work.testbench_top 
+# Start time: 19:19:20 on Sep 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(23): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'testbench_top.dut'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 19:19:20 on Sep 06,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim -gui -voptargs=+acc work.testbench_top -L iCE40UP -Lf iCE40UP
+# vsim -gui -voptargs="+acc" work.testbench_top -L iCE40UP -Lf iCE40UP 
+# Start time: 19:19:42 on Sep 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'testbench_top' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_top/dut/hf_osc File: nofile
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+# Error loading design
+# End time: 19:19:55 on Sep 06,2025, Elapsed time: 0:00:13
+# Errors: 1, Warnings: 2
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.testbench_top
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.testbench_top 
+# Start time: 19:20:44 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'reset'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (7) for port 's2'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'seg'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (5) for port 'seg_power'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# ** Warning: (vsim-3722) C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv(17): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut/mux1 File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's'. The port definition is at: C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut/sevseg_logic File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv Line: 27
+add wave -position insertpoint  \
+sim:/testbench_top/clock \
+sim:/testbench_top/led \
+sim:/testbench_top/reset \
+sim:/testbench_top/s1 \
+sim:/testbench_top/s2 \
+sim:/testbench_top/seg \
+sim:/testbench_top/seg_power
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.testbench_top
+# End time: 19:22:22 on Sep 06,2025, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 12
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.testbench_top 
+# Start time: 19:22:22 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'seg_power'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut/mux1 File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's'. The port definition is at: C:/Users/ekendrick/my_designs/e155_lab2/source/impl_1/sevseg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut/sevseg_logic File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv Line: 27
+add wave -position insertpoint  \
+sim:/testbench_top/clock \
+sim:/testbench_top/led \
+sim:/testbench_top/reset \
+sim:/testbench_top/s1 \
+sim:/testbench_top/s2 \
+sim:/testbench_top/seg \
+sim:/testbench_top/seg_power
+run 1000
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.testbench_top
+# End time: 19:25:05 on Sep 06,2025, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 6
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.testbench_top 
+# Start time: 19:25:05 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'seg_power'. The port definition is at: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_top/dut File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv Line: 17
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.testbench_top
+# End time: 19:25:49 on Sep 06,2025, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 4
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.testbench_top 
+# Start time: 19:25:49 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_top/clock \
+sim:/testbench_top/led \
+sim:/testbench_top/reset \
+sim:/testbench_top/s1 \
+sim:/testbench_top/s2 \
+sim:/testbench_top/seg \
+sim:/testbench_top/seg_power
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 1000 ns
+add wave -position insertpoint  \
+sim:/testbench_top/dut/counter1/clk
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 1000 ns
+add wave -position insertpoint  \
+sim:/testbench_top/dut/clk
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 1000 ns
+add wave -position insertpoint  \
+sim:/testbench_top/dut/counter1/sel
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 1000 ns
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.testbench_top
+# End time: 19:45:48 on Sep 06,2025, Elapsed time: 0:19:59
+# Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.testbench_top 
+# Start time: 19:45:48 on Sep 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_top/dut/sel
+add wave -position insertpoint  \
+sim:/testbench_top/clock \
+sim:/testbench_top/led \
+sim:/testbench_top/reset \
+sim:/testbench_top/s1 \
+sim:/testbench_top/s2 \
+sim:/testbench_top/seg \
+sim:/testbench_top/seg_power
+add wave -position insertpoint  \
+sim:/testbench_top/dut/clk
+run 1000 ns
+# End time: 20:40:50 on Sep 06,2025, Elapsed time: 0:55:02
+# Errors: 0, Warnings: 2

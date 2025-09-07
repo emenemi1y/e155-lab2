@@ -1,6 +1,6 @@
 module mux (input logic [3:0] s1, s2,
 			input logic sel,
-			output logic s);
+			output logic [3:0] s);
 			
 /*
 Name: Emily Kendrick
