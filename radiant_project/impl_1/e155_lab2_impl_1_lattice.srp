@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Sep  6 19:50:01 2025
+Sun Sep  7 16:55:02 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/e155_lab2_impl_1_lattice.synproj -logfile e155_lab2_impl_1_lattice.srp -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml 
@@ -210,21 +210,21 @@ Number of even-length carry chains : 0
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : reset_c, loads : 0
+  Net : clk, loads : 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : counter1/n32, loads : 33
-  Net : counter1/n229, loads : 14
-  Net : counter1/n105[23], loads : 14
+  Net : counter1/n32, loads : 35
+  Net : counter1/n305, loads : 14
   Net : counter1/n105[24], loads : 14
-  Net : counter1/n227, loads : 13
+  Net : counter1/n105[23], loads : 14
+  Net : counter1/n303, loads : 13
   Net : counter1/n105[21], loads : 13
   Net : counter1/n105[22], loads : 13
-  Net : counter1/n105[20], loads : 12
+  Net : counter1/n301, loads : 12
   Net : counter1/n105[19], loads : 12
-  Net : counter1/n225, loads : 12
+  Net : counter1/n105[20], loads : 12
 ################### End Clock Report ##################
 
 ################### Begin Constraint Report ######################
@@ -233,10 +233,10 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 93 MB
+Peak Memory Usage: 96 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
-Total REAL Time: 8 secs 
+Total REAL Time: 12 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 57c32be7dd1f8436d66fcd5490a7a107ff3bd41
+Checksum -- synthesis -- netlist: a988ab231303be61f00eefe2607d9f8755d737e

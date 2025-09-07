@@ -23,6 +23,9 @@ if {[file exists {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/
   file copy -force -- {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/e155_lab2_impl_1_syn.udb} {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/incr/postsyn.udb}
   file copy -force -- {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/e155_lab2_impl_1_map.udb} {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/incr/postmap.udb}
   file copy -force -- {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/e155_lab2_impl_1.udb} {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/incr/postpar.udb}
+  if [file exists {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc}] {
+    file copy -force -- {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc} {C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/incr/lastrun.pdc}
+  }
 }
 
 } out]} {

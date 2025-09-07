@@ -22,11 +22,12 @@ in time-multiplexing. Instantiates modules for
 	HSOSC #(.CLKHF_DIV(2'b01))
 		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
 	
+	
 	// INSTANTIATE MODULES
 	logic [3:0] s;
 	mux mux1(s1, s2, sel, s);
 	sevseg sevseg_logic(s, seg);
-	counter counter1(reset, clk, sel);
+	counter counter1(clk, reset, sel);
 	
 	// APPLY POWER TO CORRECT SEVEN-SEGMENT DISPLAY
 	assign seg_power[0] = sel;

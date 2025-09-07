@@ -13,7 +13,7 @@ that is slower than the original clock by a factor of 10.
 
 	logic [24:0] count;
 	logic [24:0] NUM_CYCLES;
-	assign NUM_CYCLES = 24'd3;
+	assign NUM_CYCLES = 24'd10000000;
 
 	// counter
 	always_ff @(posedge clk) begin

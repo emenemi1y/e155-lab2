@@ -40,7 +40,34 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn250906204046"></A><B><U><big>pn250906204046</big></U></B>
+#Start recording tcl command: 9/6/2025 18:09:53
+#Project Location: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project; Project name: e155_lab2
+prj_open "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/e155_lab2.rdf"
+prj_remove_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.vm"
+prj_add_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv"
+prj_add_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_top.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_counter.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/6/2025 20:40:46
+
+
+
 </PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn250906204046>pn250906204046</A></LI>
+</UL>
+</DIV>
 
 <button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
 <script type="text/javascript">
