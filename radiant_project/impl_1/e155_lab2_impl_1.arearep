@@ -8,13 +8,20 @@ I/O cells:      23
                             FD1P3XZ        26          100.0
                               HSOSC         1          100.0
                                  IB         9          100.0
-                               LUT4        30          100.0
+                               LUT4        29          100.0
                                  OB        14          100.0
 SUB MODULES
                             counter         1
                                 mux         1
                              sevseg         1
-                              TOTAL        96
+                              TOTAL        95
+----------------------------------------------------------------------
+Report for cell sevseg.v1
+Instance Path : sevseg_logic
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           24.1
+                              TOTAL         7
 ----------------------------------------------------------------------
 Report for cell counter.v1
 Instance Path : counter1
@@ -22,19 +29,12 @@ Instance Path : counter1
                                cell     count   Res Usage(%)
                                 FA2        13          100.0
                             FD1P3XZ        26          100.0
-                               LUT4        11           36.7
+                               LUT4        11           37.9
                               TOTAL        50
 ----------------------------------------------------------------------
 Report for cell mux.v1
 Instance Path : mux1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         4           13.3
+                               LUT4         4           13.8
                               TOTAL         4
-----------------------------------------------------------------------
-Report for cell sevseg.v1
-Instance Path : sevseg_logic
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         7           23.3
-                              TOTAL         7

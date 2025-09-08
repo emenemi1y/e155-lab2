@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>                         Lattice PAR Report File
 Radiant Software (64-bit) 2024.2.0.3.0
-Sun Sep  7 16:55:31 2025
+Mon Sep  8 14:06:51 2025
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
 	e155_lab2_impl_1_map.udb e155_lab2_impl_1.udb 
@@ -52,7 +52,7 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
 Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
 Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
 ----------   --------     -----------     ------       ---------------    -----------     ----     ------
-5_1   *      0            28.542          0            1.913              0               05       Completed
+5_1   *      0            26.772          0            1.913              0               05       Completed
 * : Design saved.
 
 Total (real) run time for 1-seed: 5 secs 
@@ -62,7 +62,7 @@ par done!
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
 PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
-PARed on: Sun Sep  7 16:55:31 2025
+PARed on: Mon Sep  8 14:06:51 2025
 
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	e155_lab2_impl_1_map.udb e155_lab2_impl_1_par.dir/5_1.udb 
@@ -85,13 +85,13 @@ Performance Grade:   High-Performance_1.2V
    Total number of constraints: 24
    Total number of constraints dropped: 0
 
-Number of Signals: 117
-Number of Connections: 246
+Number of Signals: 116
+Number of Connections: 244
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)      33/2640          1% used
-     LUT             57/5280          1% used
+   SLICE (est.)      31/2640          1% used
+     LUT             56/5280          1% used
      REG             26/5280         &lt;1% used
    PIO               23/56           41% used
                      23/36           63% bonded
@@ -125,18 +125,18 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 21550.
+Placer score = 21483.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             32/2640          1% used
+   SLICE             30/2640          1% used
 
-Finished Placer Phase 1. CPU time: 3 secs , REAL time: 3 secs 
+Finished Placer Phase 1. CPU time: 3 secs , REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  29152
-Finished Placer Phase 2.  CPU time: 3 secs , REAL time: 3 secs 
+Placer score =  28597
+Finished Placer Phase 2.  CPU time: 3 secs , REAL time: 4 secs 
 
 
 
@@ -165,14 +165,14 @@ I/O Bank Usage Summary:
 | 2        | 8 / 8 (100%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 3 secs , REAL time: 3 secs 
+Total Placer CPU time: 3 secs , REAL time: 4 secs 
 
 
-Checksum -- place: 903ced7a11c56a848dd5c04b87f841eaf53a28ae
+Checksum -- place: f54d9341a27f03dc8bb1fc6496a787699b4098bf
 Writing design to file e155_lab2_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 16:55:34 09/07/25
+Start NBR router at 14:06:55 09/08/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -191,7 +191,7 @@ Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
 1 global clock signals routed
-65 connections routed (of 246 total) (26.42%)
+65 connections routed (of 244 total) (26.64%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
@@ -201,37 +201,34 @@ Primary clocks (1 used out of 8 available):
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 16:55:35 09/07/25
+Start NBR section for initial routing at 14:06:55 09/08/25
 Level 4, iteration 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 28.542ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.505ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 16:55:35 09/07/25
+Start NBR section for normal routing at 14:06:55 09/08/25
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 28.542ns/0.000ns; real time: 0 secs 
-Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 28.542ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.505ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 16:55:35 09/07/25
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:06:55 09/08/25
 
-Start NBR section for post-routing at 16:55:35 09/07/25
+Start NBR section for post-routing at 14:06:55 09/08/25
 
 End NBR router with 0 unrouted connection(s)
 
-Checksum -- route: 9a4e0572707f1b609e8735ed67424e679578a3db
+Checksum -- route: 474863e11f912945e1010c8e3472d9f9b70ef2dc
 
 Total CPU time 1 secs 
-Total REAL time: 2 secs 
+Total REAL time: 0 secs 
 Completely routed.
-End of route.  246 routed (100.00%); 0 unrouted.
+End of route.  244 routed (100.00%); 0 unrouted.
 
 Writing design to file e155_lab2_impl_1_par.dir/5_1.udb ...
 
@@ -241,7 +238,7 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Estimated worst slack&lt;setup/&lt;ns&gt;&gt; = 28.542
+PAR_SUMMARY::Estimated worst slack&lt;setup/&lt;ns&gt;&gt; = 26.772
 PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Estimated worst slack&lt;hold/&lt;ns&gt;&gt; = 1.913
 PAR_SUMMARY::Timing score&lt;hold/&lt;ns&gt;&gt; = 0.000
@@ -251,7 +248,7 @@ Note: user must run &apos;timing&apos; for timing closure signoff.
 
 Total CPU  Time: 4 secs 
 Total REAL Time: 5 secs 
-Peak Memory Usage: 129.58 MB
+Peak Memory Usage: 130.00 MB
 
 
 par done!

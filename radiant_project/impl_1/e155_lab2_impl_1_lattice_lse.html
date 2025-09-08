@@ -48,13 +48,14 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Sep  7 16:55:02 2025
+Mon Sep  8 13:48:41 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1/e155_lab2_impl_1_lattice.synproj -logfile e155_lab2_impl_1_lattice.srp -gui -msgset C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml 
 
 INFO <35002000> - synthesis: Lattice Synthesis Engine launched.
 
+The -top option is not used.
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -94,7 +95,7 @@ Resolving user-selected strategy settings...
 ----------------------------------------------------------------
 Optimization Goal     | Area
 ----------------------------------------------------------------
-Top-level Module Name | top
+Top-level Module Name | 
 ----------------------------------------------------------------
 Target Frequency      | 200.000 MHz
 ----------------------------------------------------------------
@@ -155,6 +156,7 @@ Output HDL filename: e155_lab2_impl_1.vm
 -path C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1 (searchpath added)
 -path C:/lscc/radiant/2024.2/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
+CRITICAL <35001476> - synthesis: A top-level module has not been specified for the mixed language design.
 Verilog design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv
 Verilog design file: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/sevseg.sv
@@ -218,6 +220,7 @@ Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+WARNING <35001200> - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
@@ -226,7 +229,7 @@ INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synth
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/mux.sv(1): compiling module mux. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/sevseg.sv(1): compiling module sevseg. VERI-1018
 INFO <35901018> - synthesis: c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(1): compiling module counter. VERI-1018
-WARNING <35901209> - synthesis: c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(29): expression size 32 truncated to fit in target size 25. VERI-1209
+WARNING <35901209> - synthesis: c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(28): expression size 32 truncated to fit in target size 25. VERI-1209
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
@@ -250,7 +253,7 @@ CCU2 => 13
 FD1P3XZ => 26
 HSOSC => 1
 IB => 9
-LUT4 => 30
+LUT4 => 29
 OB => 14
 ################### End Area Report ##################
 Number of odd-length carry chains : 1
@@ -267,16 +270,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : counter1/n32, loads : 35
-  Net : counter1/n305, loads : 14
+  Net : counter1/n160, loads : 35
   Net : counter1/n105[24], loads : 14
+  Net : counter1/n248, loads : 14
   Net : counter1/n105[23], loads : 14
-  Net : counter1/n303, loads : 13
+  Net : counter1/n246, loads : 13
   Net : counter1/n105[21], loads : 13
   Net : counter1/n105[22], loads : 13
-  Net : counter1/n301, loads : 12
+  Net : counter1/n166, loads : 13
+  Net : counter1/n244, loads : 12
   Net : counter1/n105[19], loads : 12
-  Net : counter1/n105[20], loads : 12
 ################### End Clock Report ##################
 
 
@@ -288,13 +291,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 96 MB
+Peak Memory Usage: 100 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
-Total REAL Time: 12 secs 
+Total REAL Time: 11 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: a988ab231303be61f00eefe2607d9f8755d737e
+Checksum -- synthesis -- netlist: 8eb8916521576c8dd8f358bc7540c6017f68ae67
 
 
 

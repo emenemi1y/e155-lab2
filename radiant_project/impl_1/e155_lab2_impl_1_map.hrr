@@ -3,23 +3,30 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         57        100.0
-                               LUTGATE	         31        100.0
+                                  LUT4	         56        100.0
+                               LUTGATE	         30        100.0
                                 LUTCCU	         26        100.0
                                  IOBUF	         23        100.0
                                 PFUREG	         26        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                               counter	          1        64.9
-                                   mux	          1         7.0
-                                sevseg	          1        12.3
+                               counter	          1        66.1
+                                   mux	          1         7.1
+                                sevseg	          1        12.5
+---------------------------------------------------
+Report for cell sevseg
+   Instance path: top/sevseg_logic
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        12.5
+                               LUTGATE	          7        23.3
 ---------------------------------------------------
 Report for cell counter
    Instance path: top/counter1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         37        64.9
-                               LUTGATE	         11        35.5
+                                  LUT4	         37        66.1
+                               LUTGATE	         11        36.7
                                 LUTCCU	         26        100.0
                                 PFUREG	         26        100.0
 ---------------------------------------------------
@@ -27,12 +34,5 @@ Report for cell mux
    Instance path: top/mux1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          4         7.0
-                               LUTGATE	          4        12.9
----------------------------------------------------
-Report for cell sevseg
-   Instance path: top/sevseg_logic
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          7        12.3
-                               LUTGATE	          7        22.6
+                                  LUT4	          4         7.1
+                               LUTGATE	          4        13.3

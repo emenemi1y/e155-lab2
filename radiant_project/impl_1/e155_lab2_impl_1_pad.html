@@ -48,17 +48,17 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sun Sep  7 16:55:34 2025
+Mon Sep  8 14:06:55 2025
 
 Pinout by Port Name:
 +--------------+----------+--------------+-------+------------------------------------------+
 | Port Name    | Pin/Bank | Buffer Type  | Site  | Properties                               |
 +--------------+----------+--------------+-------+------------------------------------------+
-| led[0]       | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| led[1]       | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| led[0]       | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| led[1]       | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | led[2]       | 19/1     | LVCMOS33_OUT | PL22B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| led[3]       | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| led[4]       | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| led[3]       | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| led[4]       | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | reset        | 34/0     | LVCMOS33_IN  | PR14B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
 | s1[0]        | 37/0     | LVCMOS33_IN  | PR14A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
 | s1[1]        | 31/0     | LVCMOS33_IN  | PR17B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
@@ -97,9 +97,9 @@ Vccio by Bank:
 | 4/2      | seg[1]              | LOCATED    | LVCMOS33_OUT | PL10A |                  |
 | 6/1      | seg[5]              | LOCATED    | LVCMOS33_OUT | PL14B |                  |
 | 9/1      | seg[2]              | LOCATED    | LVCMOS33_OUT | PL16A |                  |
-| 10/1     | led[4]              | LOCATED    | LVCMOS33_OUT | PL17A |                  |
+| 10/1     | led[0]              | LOCATED    | LVCMOS33_OUT | PL17A |                  |
 | 11/1     | seg[6]              | LOCATED    | LVCMOS33_OUT | PL18A |                  |
-| 12/1     | led[0]              | LOCATED    | LVCMOS33_OUT | PL19A |                  |
+| 12/1     | led[4]              | LOCATED    | LVCMOS33_OUT | PL19A |                  |
 | 13/1     | seg[4]              | LOCATED    | LVCMOS33_OUT | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
 | 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
@@ -107,8 +107,8 @@ Vccio by Bank:
 | 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
 | 18/1     | seg[3]              | LOCATED    | LVCMOS33_OUT | PL23B |                  |
 | 19/1     | led[2]              | LOCATED    | LVCMOS33_OUT | PL22B |                  |
-| 20/1     | led[1]              | LOCATED    | LVCMOS33_OUT | PL20B | PCLKT1_0         |
-| 21/1     | led[3]              | LOCATED    | LVCMOS33_OUT | PL19B |                  |
+| 20/1     | led[3]              | LOCATED    | LVCMOS33_OUT | PL20B | PCLKT1_0         |
+| 21/1     | led[1]              | LOCATED    | LVCMOS33_OUT | PL19B |                  |
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
 | 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
 | 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
@@ -153,11 +153,11 @@ Vccio by Bank:
 
 Locate Constraints for each Pin: 
 
-ldc_set_location -site {12} [ get_ports {led[0]} ]
-ldc_set_location -site {20} [ get_ports {led[1]} ]
+ldc_set_location -site {10} [ get_ports {led[0]} ]
+ldc_set_location -site {21} [ get_ports {led[1]} ]
 ldc_set_location -site {19} [ get_ports {led[2]} ]
-ldc_set_location -site {21} [ get_ports {led[3]} ]
-ldc_set_location -site {10} [ get_ports {led[4]} ]
+ldc_set_location -site {20} [ get_ports {led[3]} ]
+ldc_set_location -site {12} [ get_ports {led[4]} ]
 ldc_set_location -site {34} [ get_ports {reset} ]
 ldc_set_location -site {37} [ get_ports {s1[0]} ]
 ldc_set_location -site {31} [ get_ports {s1[1]} ]
@@ -183,7 +183,7 @@ ldc_set_location -site {47} [ get_ports {seg_power[1]} ]
 
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sun Sep  7 16:55:34 2025
+Mon Sep  8 14:06:55 2025
 
 
 

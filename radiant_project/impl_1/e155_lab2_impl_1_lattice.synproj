@@ -49,7 +49,6 @@
 
 
 -path "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project"
--top top
 -udb "e155_lab2_impl_1_rtl.udb"
 -output_hdl "e155_lab2_impl_1.vm"
 

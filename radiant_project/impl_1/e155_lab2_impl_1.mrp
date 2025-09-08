@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Sun Sep  7 16:55:22 2025
+Mapped on: Mon Sep  8 14:06:42 2025
 
 Design Information
 ------------------
@@ -24,8 +24,8 @@ Design Summary
 
    Number of slice registers:  26 out of  5280 (<1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            57 out of  5280 (1%)
-      Number of logic LUT4s:              31
+   Number of LUT4s:            56 out of  5280 (1%)
+      Number of logic LUT4s:              30
       Number of ripple logic:             13 (26 LUT4s)
    Number of IO sites used:   23 out of 39 (59%)
       Number of IO sites used for general PIO: 23
@@ -53,13 +53,13 @@ Design Summary
      hf_osc.osc_inst/CLKHF)
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
-   Number of LSRs:  2
-      Net counter1.n32: 13 loads, 13 SLICEs
-      Pin reset: 1 loads, 1 SLICEs (Net: reset_c)
+   Number of LSRs:  1
+      Net counter1.n160: 13 loads, 13 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net counter1.n32: 13 loads
+      Net counter1.n160: 14 loads
       Net seg_power_c: 7 loads
       Net s[0]: 7 loads
+      Net s[1]: 7 loads
 
                                     Page 1
 
@@ -69,7 +69,6 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net s[1]: 7 loads
       Net s[2]: 7 loads
       Net s[3]: 7 loads
       Net s1_c_0: 4 loads
@@ -127,6 +126,7 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg_power[0]        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| seg_power[1]        | OUTPUT    |           |       |       |           |
 
                                     Page 2
 
@@ -136,7 +136,6 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-| seg_power[1]        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -186,7 +185,8 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 68 MB
-Checksum -- map: eae75a32685934c7267c885586df0e7b8d036198
+Checksum -- map: 774b6fa2a7bb841918f5cdd9249734af1865519
+
 
 
 

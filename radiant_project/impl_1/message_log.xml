@@ -2,6 +2,10 @@
 <BaliMessageLog>
     <Task name="Synthesis">
         <Message>
+            <ID>35001476</ID>
+            <Severity>256</Severity>
+        </Message>
+        <Message>
             <ID>35935050</ID>
             <Severity>16</Severity>
             <Dynamic>TRIM9</Dynamic>
@@ -329,6 +333,11 @@
             <Navigation>4</Navigation>
         </Message>
         <Message>
+            <ID>35001200</ID>
+            <Severity>16</Severity>
+            <Dynamic>top</Dynamic>
+        </Message>
+        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -377,11 +386,11 @@
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(29): </Dynamic>
+            <Dynamic>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv(28): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>25</Dynamic>
             <Navigation>c:/users/ekendrick/documents/github/e155-lab2/radiant_project/source/impl_1/counter.sv</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>28</Navigation>
         </Message>
     </Task>
     <Task name="Export">

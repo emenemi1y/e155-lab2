@@ -13,22 +13,19 @@ that is slower than the original clock by a factor of 10.
 
 	logic [24:0] count;
 	logic [24:0] NUM_CYCLES;
-	assign NUM_CYCLES = 24'd10000000;
+	assign NUM_CYCLES = 24'd9999;
 
 	// counter
 	always_ff @(posedge clk) begin
-		if (reset) begin
+		if (~reset) begin
 			count <= 0;
 			sel <= 0;
 		end
-		else begin
-			if (count == NUM_CYCLES) begin
-				count <= 0;
-				sel <= ~sel;
-			end
-			else count <= count + 1;
+		if (count == NUM_CYCLES) begin
+			count <= 0;
+			sel <= ~sel;
 		end
+		else count <= count + 1;
 	end
-	
 
 endmodule
