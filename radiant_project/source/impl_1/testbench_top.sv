@@ -27,12 +27,13 @@ always
 
 initial
 	begin
-		reset = 0; #100 reset = 1; #100
-		s1 <= 4'b0000; s2 <= 4'b0001; #100
-		s1 <= 4'b0101; s2 <= 4'b1010; #100
-		s1 <= 4'b1111; s2 <= 4'b1111; #100
-		s1 <= 4'b1000; s2 <= 4'b0010; #100
-		s1 <= 4'b1100; s2 <= 4'b0100; 
+		reset = 1'b0; #22 reset = 1'b1; #53
+		for (int i = 4'b0; i < 4'b1111; i++) begin
+			for (int j = 4'b0; j < 4'b1111; j++) begin
+				s1 <= i; s2 <= j; #100
+				assert (led == i + j);
+			end
+		end
 	end
 
 endmodule

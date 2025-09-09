@@ -19,8 +19,15 @@
 # Compile of mux.sv was successful.
 # Compile of testbench_mux.sv was successful.
 # Compile of lab2_ek.sv was successful.
-# Compile of testbench_top.sv was successful.
-# 6 compiles, 2 failed with no errors.
+# Compile of testbench_top.sv failed with 1 errors.
+# 6 compiles, 3 failed with 1 error.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv failed with 1 errors.
+# 6 compiles, 3 failed with 1 error.
 # Compile of counter.sv was successful.
 # Compile of testbench_counter.sv was successful.
 # Compile of mux.sv was successful.
@@ -28,39 +35,20 @@
 # Compile of lab2_ek.sv was successful.
 # Compile of testbench_top.sv was successful.
 # 6 compiles, 2 failed with no errors.
-vsim -gui work.testbench_top -voptargs=+acc
-# vsim -gui work.testbench_top -voptargs="+acc" 
-# Start time: 16:42:37 on Sep 07,2025
+vsim -gui work.testbench_counter -voptargs=+acc
+# vsim -gui work.testbench_counter -voptargs="+acc" 
+# Start time: 19:21:33 on Sep 08,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.testbench_top(fast)
-# Loading work.top(fast)
-# Loading work.mux(fast)
-# Loading work.sevseg(fast)
+# Loading work.testbench_counter(fast)
 # Loading work.counter(fast)
 add wave -position insertpoint  \
-sim:/testbench_top/clock \
-sim:/testbench_top/reset \
-sim:/testbench_top/s1 \
-sim:/testbench_top/s2 \
-sim:/testbench_top/seg \
-sim:/testbench_top/led \
-sim:/testbench_top/seg_power
-run 2000
-add wave -position insertpoint  \
-sim:/testbench_top/dut/counter1/sel
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.testbench_top(fast)
-# Loading work.top(fast)
-# Loading work.mux(fast)
-# Loading work.sevseg(fast)
-# Loading work.counter(fast)
-run 2000
+sim:/testbench_counter/clk \
+sim:/testbench_counter/reset \
+sim:/testbench_counter/sel
+run 1000000 ns
 # Compile of counter.sv was successful.
 # Compile of testbench_counter.sv was successful.
 # Compile of mux.sv was successful.
@@ -68,11 +56,305 @@ run 2000
 # Compile of lab2_ek.sv was successful.
 # Compile of testbench_top.sv was successful.
 # 6 compiles, 2 failed with no errors.
-vsim -gui -voptargs=+acc work.testbench_top
-# End time: 16:46:07 on Sep 07,2025, Elapsed time: 0:03:30
+vsim -gui -voptargs=+acc work.testbench_counter
+# End time: 19:25:33 on Sep 08,2025, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 6
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 19:25:33 on Sep 08,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_counter/clk \
+sim:/testbench_counter/reset \
+sim:/testbench_counter/sel
+run 1000000 ns
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 10000000 ns
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# End time: 19:28:52 on Sep 08,2025, Elapsed time: 0:03:19
 # Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 19:28:52 on Sep 08,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_counter/clk \
+sim:/testbench_counter/reset \
+sim:/testbench_counter/sel
+run 1000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_counter
+# End time: 19:30:01 on Sep 08,2025, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc" work.testbench_counter 
+# Start time: 19:30:01 on Sep 08,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_counter/clk \
+sim:/testbench_counter/reset \
+sim:/testbench_counter/sel
+run 1000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 1000 ns
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 1000000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 100000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_counter(fast)
+# Loading work.counter(fast)
+run 1000000
+vsim -gui -voptargs=+acc work.testbench_mux
+# End time: 19:39:37 on Sep 08,2025, Elapsed time: 0:09:36
+# Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc" work.testbench_mux 
+# Start time: 19:39:37 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+add wave -position insertpoint  \
+sim:/testbench_mux/clk \
+sim:/testbench_mux/s \
+sim:/testbench_mux/s1 \
+sim:/testbench_mux/s2 \
+sim:/testbench_mux/sel
+run 1000
+# ** Error: Assertion error.
+#    Time: 0 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 27
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 31
+# ** Error: Assertion error.
+#    Time: 10 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 15 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 35
+# ** Error: Assertion error.
+#    Time: 20 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 37
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+run 1000
+# ** Error: Assertion error.
+#    Time: 25 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 31
+# ** Error: Assertion error.
+#    Time: 35 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 45 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 35
+# ** Error: Assertion error.
+#    Time: 55 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 37
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+run 1000
+# ** Error: Assertion error.
+#    Time: 25 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 31
+# ** Error: Assertion error.
+#    Time: 35 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 45 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 35
+# ** Error: Assertion error.
+#    Time: 55 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 37
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+run 1000
+# ** Error: Assertion error.
+#    Time: 30 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 31
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 50 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 35
+# ** Error: Assertion error.
+#    Time: 60 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 37
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+run 1000
+# ** Error: Assertion error.
+#    Time: 25 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 31
+# ** Error: Assertion error.
+#    Time: 35 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 45 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 35
+# ** Error: Assertion error.
+#    Time: 55 ns  Scope: testbench_mux File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_mux.sv Line: 37
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+run 1000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_mux(fast)
+# Loading work.mux(fast)
+run 1000
+vsim -gui -voptargs=+acc work.testbench_top
+# End time: 19:51:55 on Sep 08,2025, Elapsed time: 0:12:18
+# Errors: 0, Warnings: 2
 # vsim -gui -voptargs="+acc" work.testbench_top 
-# Start time: 16:46:07 on Sep 07,2025
+# Start time: 19:51:55 on Sep 08,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -84,14 +366,179 @@ vsim -gui -voptargs=+acc work.testbench_top
 # Loading work.counter(fast)
 add wave -position insertpoint  \
 sim:/testbench_top/clock \
+sim:/testbench_top/led \
 sim:/testbench_top/reset \
 sim:/testbench_top/s1 \
 sim:/testbench_top/s2 \
 sim:/testbench_top/seg \
-sim:/testbench_top/led \
 sim:/testbench_top/seg_power
-add wave -position insertpoint  \
-sim:/testbench_top/dut/counter1/sel
-run 2000
-# End time: 16:59:10 on Sep 07,2025, Elapsed time: 0:13:03
+run 1000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 5000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# 6 compiles, 2 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 10000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 1000
+restart -f 
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 10000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+vsim -gui -voptargs=+acc work.testbench_sevseg
+# End time: 20:05:23 on Sep 08,2025, Elapsed time: 0:13:28
 # Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc" work.testbench_sevseg 
+# Start time: 20:05:23 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_sevseg(fast)
+# Loading work.sevseg(fast)
+add wave -position insertpoint  \
+sim:/testbench_sevseg/clk \
+sim:/testbench_sevseg/s \
+sim:/testbench_sevseg/seg
+view -new wave
+# .main_pane.wave1.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/testbench_sevseg/seg \
+sim:/testbench_sevseg/s \
+sim:/testbench_sevseg/clk
+run 1000
+# ** Error: Assertion error.
+#    Time: 0 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 25
+# ** Error: Assertion error.
+#    Time: 20 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 26
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 27
+# ** Error: Assertion error.
+#    Time: 60 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 28
+# ** Error: Assertion error.
+#    Time: 80 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 100 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 30
+# ** Error: Assertion error.
+#    Time: 120 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 31
+# ** Error: Assertion error.
+#    Time: 140 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 32
+# ** Error: Assertion error.
+#    Time: 160 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 180 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 34
+# ** Error: Assertion error.
+#    Time: 200 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 35
+# ** Error: Assertion error.
+#    Time: 220 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 36
+# ** Error: Assertion error.
+#    Time: 240 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 37
+# ** Error: Assertion error.
+#    Time: 260 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 38
+# ** Error: Assertion error.
+#    Time: 280 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 39
+# ** Error: Assertion error.
+#    Time: 300 ns  Scope: testbench_sevseg File: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv Line: 40
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_sevseg(fast)
+# Loading work.sevseg(fast)
+run 1000

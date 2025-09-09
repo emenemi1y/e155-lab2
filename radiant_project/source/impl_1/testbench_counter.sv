@@ -21,8 +21,8 @@ always
 	end
 	
 initial begin
-	reset = 0; #5
-	reset = 1; #100;
+	reset = 0; #22
+	reset = 1; 
 end
 
 
