@@ -27,6 +27,12 @@
         <Source name="source/impl_1/testbench_counter.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
+        <Source name="source/impl_1/AI_Prototype.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="source/impl_1/AI_Prototype_New.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
         <Source name="pins.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

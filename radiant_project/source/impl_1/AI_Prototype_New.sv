@@ -15,7 +15,7 @@ module top_mux2_7seg #(
     output logic [6:0]  seg1,            // 7-bit segments for digit 1 (active-low)
 
     // Two 4-bit values to display (hex 0..F)
-    input  logic [3:0]  a,               // left (or first) digit value
+     input  logic [3:0]  a,               // left (or first) digit value
     input  logic [3:0]  b                // right (or second) digit value
 );
 

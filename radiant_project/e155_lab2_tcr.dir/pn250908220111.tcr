@@ -1,0 +1,29 @@
+#Start recording tcl command: 9/8/2025 18:48:56
+#Project Location: C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project; Project name: e155_lab2
+prj_open "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/e155_lab2.rdf"
+prj_add_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/AI_Prototype.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/sevseg.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/AI_Prototype_New.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/AI_Prototype.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_enable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/sevseg.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_enable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv"
+prj_enable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/mux.sv"
+prj_enable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv"
+prj_disable_source "C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/AI_Prototype_New.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/8/2025 22:01:11
