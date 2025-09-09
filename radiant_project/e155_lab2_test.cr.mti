@@ -1,16 +1,16 @@
-C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv
+C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/testbench_sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_sevseg
+
+Top level modules:
+	testbench_sevseg
+
+} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/counter.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module counter
 
 Top level modules:
 	counter
-
-} {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/lab2_ek.sv
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module top
-
-Top level modules:
-	top
 
 } {} {}} C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/source/impl_1/sevseg.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024

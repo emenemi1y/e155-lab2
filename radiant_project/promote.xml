@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml" version="Diamond (64-bit) 2024.2.0.3.0" date="Mon Sep 08 20:13:08 2025" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/promote.xml" version="Diamond (64-bit) 2024.2.0.3.0" date="Mon Sep 08 21:19:28 2025" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35901328" type="Info" internal="true" />
   <msg mid="2043063" type="Warning" internal="true" />
   <msg mid="35921504" type="Info" internal="true" />
@@ -11,6 +11,7 @@
   <msg mid="2044561" type="Info" internal="true" />
   <msg mid="2043018" type="Info" internal="true" />
   <msg mid="2043328" type="Info" internal="true" />
+  <msg mid="2043206" type="Warning" internal="true" />
   <msg mid="2044320" type="Info" internal="true" />
   <msg mid="2044344" type="Error" internal="true" />
   <msg mid="2043924" type="Warning" internal="true" />
@@ -21,4 +22,6 @@
   <msg mid="2043130" type="Error" internal="true" />
   <msg mid="2043927" type="Warning" internal="true" />
   <msg mid="2043372" type="Warning" internal="true" />
+  <msg mid="35931002" type="Warning" internal="true" />
+  <msg mid="2044142" type="Info" internal="true" />
 </userSetting>

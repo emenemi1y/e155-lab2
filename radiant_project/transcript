@@ -542,3 +542,56 @@ restart -f
 # Loading work.testbench_sevseg(fast)
 # Loading work.sevseg(fast)
 run 1000
+vsim -gui -voptargs=+acc work.testbench_top
+# End time: 21:04:01 on Sep 08,2025, Elapsed time: 0:58:38
+# Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc" work.testbench_top 
+# Start time: 21:04:01 on Sep 08,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+add wave -position insertpoint  \
+sim:/testbench_top/seg_power \
+sim:/testbench_top/seg \
+sim:/testbench_top/s2 \
+sim:/testbench_top/s1 \
+sim:/testbench_top/reset \
+sim:/testbench_top/led \
+sim:/testbench_top/clock
+run 5000
+log -r *
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 5000
+# Compile of counter.sv was successful.
+# Compile of testbench_counter.sv was successful.
+# Compile of mux.sv was successful.
+# Compile of testbench_mux.sv was successful.
+# Compile of lab2_ek.sv was successful.
+# Compile of testbench_top.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of testbench_sevseg.sv was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_top(fast)
+# Loading work.top(fast)
+# Loading work.mux(fast)
+# Loading work.sevseg(fast)
+# Loading work.counter(fast)
+run 5000
+# End time: 22:00:32 on Sep 08,2025, Elapsed time: 0:56:31
+# Errors: 0, Warnings: 2

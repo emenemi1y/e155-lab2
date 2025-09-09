@@ -42,14 +42,14 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Mrp"></A>                         Lattice Mapping Report File
 
-Design:  seven_segment_multiplexer
+Design:  top
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Mon Sep  8 20:12:39 2025
+Mapped on: Mon Sep  8 21:19:00 2025
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
@@ -61,20 +61,20 @@ Command line:   map -pdc
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers:  17 out of  5280 (&lt;1%)
+   Number of slice registers:  26 out of  5280 (&lt;1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            38 out of  5280 (1%)
-      Number of logic LUT4s:              20
-      Number of ripple logic:              9 (18 LUT4s)
-   Number of IO sites used:   19 out of 39 (49%)
-      Number of IO sites used for general PIO: 19
+   Number of LUT4s:            58 out of  5280 (1%)
+      Number of logic LUT4s:              32
+      Number of ripple logic:             13 (26 LUT4s)
+   Number of IO sites used:   24 out of 39 (62%)
+      Number of IO sites used for general PIO: 24
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 19 out of 36 (53%)
+      Number of IO sites used for PIO+I3C: 24 out of 36 (67%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 19 out of 39 (49%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 24 out of 39 (62%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -88,188 +88,30 @@ Command line:   map -pdc
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk_c: 10 loads, 10 rising, 0 falling (Driver: Port clk)
+      Net clk_c: 14 loads, 14 rising, 0 falling (Driver: Port clk)
    Number of Clock Enables:  0
-   Number of LSRs:  1
-      Net sel_N_49: 10 loads, 10 SLICEs
+   Number of LSRs:  2
+      Net counter1.n31: 13 loads, 13 SLICEs
+      Net counter1.n30: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net sel_N_49: 10 loads
-      Net muxed_input[0]: 7 loads
-      Net muxed_input[1]: 7 loads
-      Net muxed_input[2]: 7 loads
-      Net muxed_input[3]: 7 loads
-      Net sel: 7 loads
-      Net clk_div[0]: 2 loads
-      Net clk_div[11]: 2 loads
-      Net clk_div[14]: 2 loads
-      Net clk_div[15]: 2 loads
+      Net counter1.n31: 13 loads
+      Net seg_power_c: 7 loads
+      Net s[0]: 7 loads
+      Net s[1]: 7 loads
+      Net s[2]: 7 loads
+      Net s[3]: 7 loads
+      Net s1_c_0: 4 loads
+      Net s2_c_0: 4 loads
+      Net s1_c_2: 3 loads
+      Net s1_c_3: 3 loads
 
-   Number of warnings:  64
+   Number of warnings:  0
    Number of criticals: 0
    Number of errors:    0
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
 
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (1)
-     : No port matched &apos;reset&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (2)
-     : No port matched &apos;s1[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (3)
-     : No port matched &apos;s1[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (4)
-     : No port matched &apos;s1[2]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (5)
-     : No port matched &apos;s1[3]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (6)
-     : No port matched &apos;s2[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (7)
-     : No port matched &apos;s2[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (8)
-     : No port matched &apos;s2[2]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (9)
-     : No port matched &apos;s2[3]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (17)
-     : No port matched &apos;seg_power[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (18)
-     : No port matched &apos;seg_power[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (19)
-     : No port matched &apos;led[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (20)
-     : No port matched &apos;led[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (21)
-     : No port matched &apos;led[2]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (22)
-     : No port matched &apos;led[3]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (23)
-     : No port matched &apos;led[4]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;reset&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (1)
-     : Can&apos;t resolve object &apos;reset&apos; in constraint &apos;ldc_set_location -site {34}
-     [get_ports reset]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s1[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (2)
-     : Can&apos;t resolve object &apos;s1[0]&apos; in constraint &apos;ldc_set_location -site {37}
-     [get_ports {s1[0]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s1[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (3)
-     : Can&apos;t resolve object &apos;s1[1]&apos; in constraint &apos;ldc_set_location -site {31}
-     [get_ports {s1[1]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s1[2]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (4)
-     : Can&apos;t resolve object &apos;s1[2]&apos; in constraint &apos;ldc_set_location -site {35}
-     [get_ports {s1[2]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s1[3]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (5)
-     : Can&apos;t resolve object &apos;s1[3]&apos; in constraint &apos;ldc_set_location -site {32}
-     [get_ports {s1[3]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s2[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (6)
-     : Can&apos;t resolve object &apos;s2[0]&apos; in constraint &apos;ldc_set_location -site {46}
-     [get_ports {s2[0]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s2[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (7)
-     : Can&apos;t resolve object &apos;s2[1]&apos; in constraint &apos;ldc_set_location -site {45}
-     [get_ports {s2[1]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s2[2]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (8)
-     : Can&apos;t resolve object &apos;s2[2]&apos; in constraint &apos;ldc_set_location -site {3}
-     [get_ports {s2[2]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;s2[3]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (9)
-     : Can&apos;t resolve object &apos;s2[3]&apos; in constraint &apos;ldc_set_location -site {44}
-     [get_ports {s2[3]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;seg_power[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (17)
-     : Can&apos;t resolve object &apos;seg_power[0]&apos; in constraint &apos;ldc_set_location -site
-     {2} [get_ports {seg_power[0]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;seg_power[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (18)
-     : Can&apos;t resolve object &apos;seg_power[1]&apos; in constraint &apos;ldc_set_location -site
-     {47} [get_ports {seg_power[1]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;led[0]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (19)
-     : Can&apos;t resolve object &apos;led[0]&apos; in constraint &apos;ldc_set_location -site {10}
-     [get_ports {led[0]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;led[1]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (20)
-     : Can&apos;t resolve object &apos;led[1]&apos; in constraint &apos;ldc_set_location -site {21}
-     [get_ports {led[1]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;led[2]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (21)
-     : Can&apos;t resolve object &apos;led[2]&apos; in constraint &apos;ldc_set_location -site {19}
-     [get_ports {led[2]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;led[3]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (22)
-     : Can&apos;t resolve object &apos;led[3]&apos; in constraint &apos;ldc_set_location -site {20}
-     [get_ports {led[3]}]&apos;.
-WARNING &lt;1027013&gt; - map: No port matched &apos;led[4]&apos;.
-WARNING &lt;1026001&gt; - map:
-     C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (23)
-     : Can&apos;t resolve object &apos;led[4]&apos; in constraint &apos;ldc_set_location -site {12}
-     [get_ports {led[4]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {34}
-     [get_ports reset]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {37}
-     [get_ports {s1[0]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {31}
-     [get_ports {s1[1]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {35}
-     [get_ports {s1[2]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {32}
-     [get_ports {s1[3]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {46}
-     [get_ports {s2[0]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {45}
-     [get_ports {s2[1]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {3}
-     [get_ports {s2[2]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {44}
-     [get_ports {s2[3]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {2}
-     [get_ports {seg_power[0]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {47}
-     [get_ports {seg_power[1]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {10}
-     [get_ports {led[0]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {21}
-     [get_ports {led[1]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {19}
-     [get_ports {led[2]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {20}
-     [get_ports {led[3]}]&apos;.
-WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location -site {12}
-     [get_ports {led[4]}]&apos;.
+   No error, critical, or warning presents.
 
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
@@ -277,29 +119,39 @@ WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location 
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in1[0]              | INPUT     |           |       |       |           |
+| s2[0]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in1[1]              | INPUT     |           |       |       |           |
+| s2[1]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in1[2]              | INPUT     |           |       |       |           |
+| s2[2]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in1[3]              | INPUT     |           |       |       |           |
+| s2[3]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in0[0]              | INPUT     |           |       |       |           |
+| s1[0]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in0[1]              | INPUT     |           |       |       |           |
+| s1[1]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in0[2]              | INPUT     |           |       |       |           |
+| s1[2]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| in0[3]              | INPUT     |           |       |       |           |
+| s1[3]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rst_n               | INPUT     |           |       |       |           |
+| reset               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | clk                 | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| an[0]               | OUTPUT    |           |       |       |           |
+| led[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| an[1]               | OUTPUT    |           |       |       |           |
+| led[1]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led[2]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led[3]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led[4]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg_power[0]        | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg_power[1]        | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -318,7 +170,7 @@ WARNING &lt;1011001&gt; - map: Remove invalid constraint &apos;ldc_set_location 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block i1 was optimized away.
+Block s2_pad[0].vlo_inst was optimized away.
 
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 
@@ -326,31 +178,14 @@ Block i1 was optimized away.
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 
    Total number of constraints: 23
-   Total number of constraints dropped: 16
-   Dropped constraints are:
-     ldc_set_location -site {34} [get_ports reset]
-     ldc_set_location -site {37} [get_ports {s1[0]}]
-     ldc_set_location -site {31} [get_ports {s1[1]}]
-     ldc_set_location -site {35} [get_ports {s1[2]}]
-     ldc_set_location -site {32} [get_ports {s1[3]}]
-     ldc_set_location -site {46} [get_ports {s2[0]}]
-     ldc_set_location -site {45} [get_ports {s2[1]}]
-     ldc_set_location -site {3} [get_ports {s2[2]}]
-     ldc_set_location -site {44} [get_ports {s2[3]}]
-     ldc_set_location -site {2} [get_ports {seg_power[0]}]
-     ldc_set_location -site {47} [get_ports {seg_power[1]}]
-     ldc_set_location -site {10} [get_ports {led[0]}]
-     ldc_set_location -site {21} [get_ports {led[1]}]
-     ldc_set_location -site {19} [get_ports {led[2]}]
-     ldc_set_location -site {20} [get_ports {led[3]}]
-     ldc_set_location -site {12} [get_ports {led[4]}]
+   Total number of constraints dropped: 0
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 68 MB
-Checksum -- map: 22467d4f7c7665d52064077ebec40b1c76586a78
+Checksum -- map: 8c6194c7571a0fd79c6da728c48bc3d6a9c32ff5
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.

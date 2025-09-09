@@ -1,4 +1,4 @@
-<top name = "seven_segment_multiplexer"  library = "work"  arch = ""  entry = "Verilog">
+<top name = "top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
     <clockitem name = "clk"  type = "port" />

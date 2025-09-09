@@ -1,3 +1,49 @@
 DRC: Design Rule Check Radiant Software (64-bit) 2024.2.0.3.0
-Mon Sep  8 14:06:34 2025
+Mon Sep  8 21:17:32 2025
 
+WARNING <1027013> - No port matched 'reset'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (1) : Can't resolve object 'reset' in constraint 'ldc_set_location -site {34} [get_ports reset]'.
+WARNING <1027013> - No port matched 's1[0]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (2) : Can't resolve object 's1[0]' in constraint 'ldc_set_location -site {37} [get_ports {s1[0]}]'.
+WARNING <1027013> - No port matched 's1[1]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (3) : Can't resolve object 's1[1]' in constraint 'ldc_set_location -site {31} [get_ports {s1[1]}]'.
+WARNING <1027013> - No port matched 's1[2]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (4) : Can't resolve object 's1[2]' in constraint 'ldc_set_location -site {35} [get_ports {s1[2]}]'.
+WARNING <1027013> - No port matched 's1[3]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (5) : Can't resolve object 's1[3]' in constraint 'ldc_set_location -site {32} [get_ports {s1[3]}]'.
+WARNING <1027013> - No port matched 's2[0]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (6) : Can't resolve object 's2[0]' in constraint 'ldc_set_location -site {46} [get_ports {s2[0]}]'.
+WARNING <1027013> - No port matched 's2[1]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (7) : Can't resolve object 's2[1]' in constraint 'ldc_set_location -site {45} [get_ports {s2[1]}]'.
+WARNING <1027013> - No port matched 's2[2]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (8) : Can't resolve object 's2[2]' in constraint 'ldc_set_location -site {3} [get_ports {s2[2]}]'.
+WARNING <1027013> - No port matched 's2[3]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (9) : Can't resolve object 's2[3]' in constraint 'ldc_set_location -site {44} [get_ports {s2[3]}]'.
+WARNING <1027013> - No port matched 'seg[0]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (10) : Can't resolve object 'seg[0]' in constraint 'ldc_set_location -site {48} [get_ports {seg[0]}]'.
+WARNING <1027013> - No port matched 'seg[1]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (11) : Can't resolve object 'seg[1]' in constraint 'ldc_set_location -site {4} [get_ports {seg[1]}]'.
+WARNING <1027013> - No port matched 'seg[2]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (12) : Can't resolve object 'seg[2]' in constraint 'ldc_set_location -site {9} [get_ports {seg[2]}]'.
+WARNING <1027013> - No port matched 'seg[3]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (13) : Can't resolve object 'seg[3]' in constraint 'ldc_set_location -site {18} [get_ports {seg[3]}]'.
+WARNING <1027013> - No port matched 'seg[4]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (14) : Can't resolve object 'seg[4]' in constraint 'ldc_set_location -site {13} [get_ports {seg[4]}]'.
+WARNING <1027013> - No port matched 'seg[5]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (15) : Can't resolve object 'seg[5]' in constraint 'ldc_set_location -site {6} [get_ports {seg[5]}]'.
+WARNING <1027013> - No port matched 'seg[6]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (16) : Can't resolve object 'seg[6]' in constraint 'ldc_set_location -site {11} [get_ports {seg[6]}]'.
+WARNING <1027013> - No port matched 'seg_power[0]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (17) : Can't resolve object 'seg_power[0]' in constraint 'ldc_set_location -site {2} [get_ports {seg_power[0]}]'.
+WARNING <1027013> - No port matched 'seg_power[1]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (18) : Can't resolve object 'seg_power[1]' in constraint 'ldc_set_location -site {47} [get_ports {seg_power[1]}]'.
+WARNING <1027013> - No port matched 'led[0]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (19) : Can't resolve object 'led[0]' in constraint 'ldc_set_location -site {10} [get_ports {led[0]}]'.
+WARNING <1027013> - No port matched 'led[1]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (20) : Can't resolve object 'led[1]' in constraint 'ldc_set_location -site {21} [get_ports {led[1]}]'.
+WARNING <1027013> - No port matched 'led[2]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (21) : Can't resolve object 'led[2]' in constraint 'ldc_set_location -site {19} [get_ports {led[2]}]'.
+WARNING <1027013> - No port matched 'led[3]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (22) : Can't resolve object 'led[3]' in constraint 'ldc_set_location -site {20} [get_ports {led[3]}]'.
+WARNING <1027013> - No port matched 'led[4]'.
+WARNING <1026001> - C:/Users/ekendrick/Documents/GitHub/e155-lab2/radiant_project/pins.pdc (23) : Can't resolve object 'led[4]' in constraint 'ldc_set_location -site {12} [get_ports {led[4]}]'.

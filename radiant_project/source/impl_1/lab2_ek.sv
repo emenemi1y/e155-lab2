@@ -1,5 +1,5 @@
 module top(
-	input logic clock, reset,
+	input logic reset,
 	input logic [3:0] s1, s2,
 	output logic [6:0] seg,
 	output logic [1:0] seg_power,
@@ -15,13 +15,13 @@ Instantiates high-speed oscillator for use
 in time-multiplexing. Instantiates modules for 
 7-segment and LED logic and time-multiplexing.
 */
-	/*
+	
 	// instantiate clock
 	logic clk;
 	logic sel;
 	HSOSC #(.CLKHF_DIV(2'b01))
 		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
-	*/
+	
 	
 	
 	// INSTANTIATE MODULES

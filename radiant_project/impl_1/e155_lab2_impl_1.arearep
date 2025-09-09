@@ -1,12 +1,39 @@
 ----------------------------------------------------------------------
-Report for cell seven_segment_multiplexer.TECH
-Register bits:  17 of 5280 (0.322%)
-I/O cells:      19
+Report for cell top.TECH
+Register bits:  26 of 5280 (0.492%)
+I/O cells:      24
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2         9          100.0
-                            FD1P3XZ        17          100.0
+                               CCU2        13          100.0
+                            FD1P3XZ        26          100.0
                                  IB        10          100.0
-                               LUT4        19          100.0
-                                 OB         9          100.0
-                              TOTAL        64
+                               LUT4        31          100.0
+                                 OB        14          100.0
+SUB MODULES
+                            counter         1
+                                mux         1
+                             sevseg         1
+                              TOTAL        97
+----------------------------------------------------------------------
+Report for cell counter.v1
+Instance Path : counter1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13          100.0
+                            FD1P3XZ        26          100.0
+                               LUT4        12           38.7
+                              TOTAL        51
+----------------------------------------------------------------------
+Report for cell mux.v1
+Instance Path : mux1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           12.9
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell sevseg.v1
+Instance Path : sevseg_logic
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           22.6
+                              TOTAL         7
